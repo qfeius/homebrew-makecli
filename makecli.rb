@@ -5,21 +5,21 @@
 class Makecli < Formula
   desc "makecli — agentic development platform cli"
   homepage "https://github.com/qfeius/makecli"
-  version "0.5.12"
+  version "0.5.13"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/qfeius/makecli/releases/download/v0.5.12/makecli_0.5.12_darwin_amd64.tar.gz"
-      sha256 "43c33106fb1522f1db6b83cf1af8ce7019b95e2659cc5a1f58c719e30059ae5d"
+      url "https://github.com/qfeius/makecli/releases/download/v0.5.13/makecli_0.5.13_darwin_amd64.tar.gz"
+      sha256 "dd8efa6e5379d603e8577699e1cf5c63b89372bc0f4fdd60ac56d279a0f74eaf"
 
       define_method(:install) do
         bin.install "makecli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/qfeius/makecli/releases/download/v0.5.12/makecli_0.5.12_darwin_arm64.tar.gz"
-      sha256 "957db4835519caa0e4005521149fb27eaad2da234263911a292b56fef58d2e43"
+      url "https://github.com/qfeius/makecli/releases/download/v0.5.13/makecli_0.5.13_darwin_arm64.tar.gz"
+      sha256 "c6f54091fbec677459aaa14318b96ee1783e51498f1987a8067cedcaab3ef3f0"
 
       define_method(:install) do
         bin.install "makecli"
@@ -29,15 +29,15 @@ class Makecli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/qfeius/makecli/releases/download/v0.5.12/makecli_0.5.12_linux_amd64.tar.gz"
-      sha256 "567ea409f43b08722ce01a2fe64a603fecc0cea0ace57478728f24beadc98dd7"
+      url "https://github.com/qfeius/makecli/releases/download/v0.5.13/makecli_0.5.13_linux_amd64.tar.gz"
+      sha256 "030b3abb57a555337315037108cf9c4f821a771acd26057b51a605247d1f4d3a"
       define_method(:install) do
         bin.install "makecli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/qfeius/makecli/releases/download/v0.5.12/makecli_0.5.12_linux_arm64.tar.gz"
-      sha256 "db5864a56a2ec0e99b487e7bd3c9309111549a28b783afbe6f7be01e8bb89038"
+      url "https://github.com/qfeius/makecli/releases/download/v0.5.13/makecli_0.5.13_linux_arm64.tar.gz"
+      sha256 "1da2aa11e1d6dcce932ea5289146d05b3e1c158776d951ad394fa5b8be3e9708"
       define_method(:install) do
         bin.install "makecli"
       end
